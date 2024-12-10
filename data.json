@@ -1,0 +1,66 @@
+{
+	"cardiology": [
+		{
+			"name": "Dr. John Heartwell",
+			"specialize": "Interventional Cardiology",
+			"history": "Dr. Heartwell has over 20 years of experience in treating complex cardiac conditions and performing angioplasty procedures.",
+			"location": "New York, NY, USA",
+			"image": "https://www.example.com/images/dr-john-heartwell.jpg"
+		},
+		{
+			"name": "Dr. Lisa Cardio",
+			"specialize": "Pediatric Cardiology",
+			"history": "Dr. Cardio specializes in congenital heart defects in children and is a pioneer in non-invasive diagnostics.",
+			"location": "Los Angeles, CA, USA",
+			"image": "https://www.example.com/images/dr-lisa-cardio.jpg"
+		}
+	],
+	"dermatology": [
+		{
+			"name": "Dr. Emma Skinner",
+			"specialize": "Cosmetic Dermatology",
+			"history": "Dr. Skinner has been providing advanced cosmetic treatments for over 15 years, including laser therapies and chemical peels.",
+			"location": "Miami, FL, USA",
+			"image": "https://www.example.com/images/dr-emma-skinner.jpg"
+		},
+		{
+			"name": "Dr. Richard Derm",
+			"specialize": "Medical Dermatology",
+			"history": "Dr. Derm focuses on the treatment of chronic skin conditions such as psoriasis and eczema, with over a decade of experience.",
+			"location": "Chicago, IL, USA",
+			"image": "https://www.example.com/images/dr-richard-derm.jpg"
+		}
+	],
+	"neurology": [
+		{
+			"name": "Dr. Nancy Brain",
+			"specialize": "Neurovascular Medicine",
+			"history": "Dr. Brain is an expert in stroke management and has contributed to groundbreaking research in neurovascular therapy.",
+			"location": "Boston, MA, USA",
+			"image": "https://www.example.com/images/dr-nancy-brain.jpg"
+		},
+		{
+			"name": "Dr. Thomas Neuron",
+			"specialize": "Pediatric Neurology",
+			"history": "Dr. Neuron is renowned for his work in treating epilepsy and other neurological disorders in children.",
+			"location": "San Francisco, CA, USA",
+			"image": "https://www.example.com/images/dr-thomas-neuron.jpg"
+		}
+	],
+	"orthopedics": [
+		{
+			"name": "Dr. Alan Bones",
+			"specialize": "Sports Orthopedics",
+			"history": "Dr. Bones has worked with professional athletes, specializing in knee and shoulder injuries.",
+			"location": "Dallas, TX, USA",
+			"image": "https://www.example.com/images/dr-alan-bones.jpg"
+		},
+		{
+			"name": "Dr. Sophie Joint",
+			"specialize": "Pediatric Orthopedics",
+			"history": "Dr. Joint has a decade of experience treating musculoskeletal disorders in children and adolescents.",
+			"location": "Seattle, WA, USA",
+			"image": "https://www.example.com/images/dr-sophie-joint.jpg"
+		}
+	]
+}
