@@ -1,66 +1,148 @@
 {
-	"cardiology": [
-		{
-			"name": "Dr. John Heartwell",
-			"specialize": "Interventional Cardiology",
-			"history": "Dr. Heartwell has over 20 years of experience in treating complex cardiac conditions and performing angioplasty procedures.",
-			"location": "New York, NY, USA",
-			"image": "https://www.example.com/images/dr-john-heartwell.jpg"
-		},
-		{
-			"name": "Dr. Lisa Cardio",
-			"specialize": "Pediatric Cardiology",
-			"history": "Dr. Cardio specializes in congenital heart defects in children and is a pioneer in non-invasive diagnostics.",
-			"location": "Los Angeles, CA, USA",
-			"image": "https://www.example.com/images/dr-lisa-cardio.jpg"
-		}
-	],
-	"dermatology": [
-		{
-			"name": "Dr. Emma Skinner",
-			"specialize": "Cosmetic Dermatology",
-			"history": "Dr. Skinner has been providing advanced cosmetic treatments for over 15 years, including laser therapies and chemical peels.",
-			"location": "Miami, FL, USA",
-			"image": "https://www.example.com/images/dr-emma-skinner.jpg"
-		},
-		{
-			"name": "Dr. Richard Derm",
-			"specialize": "Medical Dermatology",
-			"history": "Dr. Derm focuses on the treatment of chronic skin conditions such as psoriasis and eczema, with over a decade of experience.",
-			"location": "Chicago, IL, USA",
-			"image": "https://www.example.com/images/dr-richard-derm.jpg"
-		}
-	],
-	"neurology": [
-		{
-			"name": "Dr. Nancy Brain",
-			"specialize": "Neurovascular Medicine",
-			"history": "Dr. Brain is an expert in stroke management and has contributed to groundbreaking research in neurovascular therapy.",
-			"location": "Boston, MA, USA",
-			"image": "https://www.example.com/images/dr-nancy-brain.jpg"
-		},
-		{
-			"name": "Dr. Thomas Neuron",
-			"specialize": "Pediatric Neurology",
-			"history": "Dr. Neuron is renowned for his work in treating epilepsy and other neurological disorders in children.",
-			"location": "San Francisco, CA, USA",
-			"image": "https://www.example.com/images/dr-thomas-neuron.jpg"
-		}
-	],
-	"orthopedics": [
-		{
-			"name": "Dr. Alan Bones",
-			"specialize": "Sports Orthopedics",
-			"history": "Dr. Bones has worked with professional athletes, specializing in knee and shoulder injuries.",
-			"location": "Dallas, TX, USA",
-			"image": "https://www.example.com/images/dr-alan-bones.jpg"
-		},
-		{
-			"name": "Dr. Sophie Joint",
-			"specialize": "Pediatric Orthopedics",
-			"history": "Dr. Joint has a decade of experience treating musculoskeletal disorders in children and adolescents.",
-			"location": "Seattle, WA, USA",
-			"image": "https://www.example.com/images/dr-sophie-joint.jpg"
-		}
-	]
-}
+	"medicalSpecializations": [
+	  {
+		"imageUrl": "images/imagesclinics/Cardiothoracic-Surgery.webp",
+		"name": "Cardiology",
+		"description": "Cardiology focuses on the diagnosis and treatment of heart-related conditions and diseases.",
+		"solutions": [
+		  "Medication for high blood pressure and cholesterol",
+		  "Coronary angioplasty",
+		  "Lifestyle changes such as diet and exercise",
+		  "Cardiac rehabilitation programs"
+		],
+		"doctors": [
+		  {
+			"name": "Dr. Ahmed Hossam",
+			"imageUrl": "https://example.com/doctor1.jpg",
+			"location": "Cairo",
+			"specialized": "Cardiology",
+			"description": "Expert in treating cardiovascular diseases with over 15 years of experience."
+		  },
+		  {
+			"name": "Dr. Mona Khaled",
+			"imageUrl": "https://example.com/doctor2.jpg",
+			"location": "Sheikh Zayed",
+			"specialized": "Cardiology",
+			"description": "Specializes in heart failure and interventional cardiology."
+		  },
+		  {
+			"name": "Dr. Samir El-Din",
+			"imageUrl": "https://example.com/doctor3.jpg",
+			"location": "North Coast",
+			"specialized": "Cardiology",
+			"description": "Focuses on preventive cardiology and hypertension management."
+		  },
+		  {
+			"name": "Dr. Heba Ali",
+			"imageUrl": "https://example.com/doctor4.jpg",
+			"location": "Cairo",
+			"specialized": "Cardiology",
+			"description": "Renowned for minimally invasive cardiac procedures."
+		  },
+		  {
+			"name": "Dr. Omar Hassan",
+			"imageUrl": "https://example.com/doctor5.jpg",
+			"location": "Sheikh Zayed",
+			"specialized": "Cardiology",
+			"description": "Well-versed in pediatric cardiology."
+		  }
+		]
+	  },
+	  {
+		"imageUrl": "images/imagesclinics/neurology.webp",
+		"name": "Neurology",
+		"description": "Neurology specializes in disorders of the nervous system, including the brain and spinal cord.",
+		"solutions": [
+		  "Physical therapy for neurological disorders",
+		  "Medications for epilepsy and Parkinson's disease",
+		  "Surgical interventions like deep brain stimulation",
+		  "Cognitive behavioral therapy"
+		],
+		"doctors": [
+		  {
+			"name": "Dr. Rana Youssef",
+			"imageUrl": "https://example.com/doctor6.jpg",
+			"location": "Cairo",
+			"specialized": "Neurology",
+			"description": "Expert in managing migraines and multiple sclerosis."
+		  },
+		  {
+			"name": "Dr. Karim Fathy",
+			"imageUrl": "https://example.com/doctor7.jpg",
+			"location": "Sheikh Zayed",
+			"specialized": "Neurology",
+			"description": "Specialist in epilepsy and movement disorders."
+		  },
+		  {
+			"name": "Dr. Layla Saad",
+			"imageUrl": "https://example.com/doctor8.jpg",
+			"location": "North Coast",
+			"specialized": "Neurology",
+			"description": "Experienced in neurodegenerative diseases."
+		  },
+		  {
+			"name": "Dr. Hisham Tarek",
+			"imageUrl": "https://example.com/doctor9.jpg",
+			"location": "Cairo",
+			"specialized": "Neurology",
+			"description": "Focuses on stroke recovery and rehabilitation."
+		  },
+		  {
+			"name": "Dr. Amira Nabil",
+			"imageUrl": "https://example.com/doctor10.jpg",
+			"location": "Sheikh Zayed",
+			"specialized": "Neurology",
+			"description": "Well-known for pediatric neurology care."
+		  }
+		]
+	  },
+	  {
+		"imageUrl": "images/imagesclinics/psychology.webp",
+		"name": "Dermatology",
+		"description": "Dermatology addresses issues related to the skin, hair, and nails.",
+		"solutions": [
+		  "Topical treatments for acne and eczema",
+		  "Laser therapy for skin rejuvenation",
+		  "Biopsy for suspicious skin growths",
+		  "Allergy testing and treatments"
+		],
+		"doctors": [
+		  {
+			"name": "Dr. Salma Adel",
+			"imageUrl": "https://example.com/doctor11.jpg",
+			"location": "Cairo",
+			"specialized": "Dermatology",
+			"description": "Skincare specialist focusing on acne treatments."
+		  },
+		  {
+			"name": "Dr. Wael Mansour",
+			"imageUrl": "https://example.com/doctor12.jpg",
+			"location": "Sheikh Zayed",
+			"specialized": "Dermatology",
+			"description": "Expert in laser therapy for skin conditions."
+		  },
+		  {
+			"name": "Dr. Rania Helmy",
+			"imageUrl": "https://example.com/doctor13.jpg",
+			"location": "North Coast",
+			"specialized": "Dermatology",
+			"description": "Specializes in hair loss and scalp issues."
+		  },
+		  {
+			"name": "Dr. Adel Ibrahim",
+			"imageUrl": "https://example.com/doctor14.jpg",
+			"location": "Cairo",
+			"specialized": "Dermatology",
+			"description": "Known for effective eczema management."
+		  },
+		  {
+			"name": "Dr. Farah Magdy",
+			"imageUrl": "https://example.com/doctor15.jpg",
+			"location": "Sheikh Zayed",
+			"specialized": "Dermatology",
+			"description": "Focuses on cosmetic dermatology and skin health."
+		  }
+		]
+	  }]
+  }
+  

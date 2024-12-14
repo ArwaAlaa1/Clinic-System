@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css" >
+</head>
+<body>
+    <nav
+    style="width: 100%;font-family: raleway;font-weight: 200;position:sticky;top:0px;left: 0px;z-index: 1000;box-shadow: 0px 0px 20px rgb(156, 154, 154);">
+
+    <div style="background-color: rgb(41, 40, 40);padding: 10px 60px; font-size: 13px;">
+        <ul style="list-style: none;display: flex;color: white;">
+            <li style="padding-right: 25px;"><i class="fa-solid fa-clock"></i>9am to 10pm</li>
+            <li style="padding-right: 25px;"><i class="fa-solid fa-phone"></i>+20 1011037481</li>
+
+            <li style="padding-right: 25px;"><i class="fa-solid fa-envelope"></i>clinic@gmail.com</li>
+        </ul>
+    </div>
+    <div style="background-color: white;">
+        <div style="width: 90%;margin: auto;display: flex; justify-content: center;padding: 15px;">
+            <div style="width: 20%;">
+                <a style="text-decoration: none;">
+                    <img src="images/oasis-clinics-logo.png" style="width:50%;">
+                </a>
+            </div>
+
+            <ul style="width: 80%;display: flex;list-style: none;padding-top: 20px;position: relative;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="clinics.html" id="clinic" onclick="GetClinics()">Clinics</a></li>
+                <li><a href="Doctors.html" id="doctorlink">Doctors</a></li>
+                <li><a href="doctor.html">Contact us</a></li>
+                <li><a style="position: absolute;right: 100px;bottom: 8px;padding: 10px 20px;color: white;border-radius:3px;"
+                        class="buttonBase">Appointment</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+</nav>
+
+
+<section style="padding: 50px;">
+    <h3 style="padding-bottom: 40px;">Doctors</h3>
+    <div style="width: 100%;margin: auto;">
+       <div style="width: 35%;float: left;">
+        <span style="margin-right:30px;border-bottom: 1px solid #0c6e45;color:#0c6e45" value="All">All</span>
+        <span value="Sheikh Zayed" style="margin-right: 30px;">Sheikh Zayed</span>
+        <span value="Cairo" style="margin-right:30px;">Cairo</span>
+        <span value="North Coast" style="margin-right: 30px;">North Coast</span>
+        <hr>
+       </div>
+       <div style="width:50%;float: right;background-color: aquamarine;position: relative;">
+       <select style="position: absolute;right: 0px;top: 0px;padding: 10px 25px;" id="clinicsList">
+        <option selected disabled>Select Clinics</option>
+       </select>
+       </div>
+
+    </div>
+</section>
+
+<section>
+   <div style="padding: 35px;">
+    <h3 >Doctors</h3>
+    <div id="doctors" style="padding: 30px;width:93%;margin: auto;">
+
+    </div>
+   </div>
+</section>
+<script src="doctor.js"></script>
+</body>
+</html>
