@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUpStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>sign up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <h1 class="signup-title">Sign Up</h1>
+            <img src="images/3657978.jpg" alt="">
+          </div>
+          <div class="right-content">
+            <form action="#" method="POST" enctype="multipart/form-data">
+              <div class="input-box">
+                <input type="text" required>
+                <label for="">Username</label>
+              </div>
+
+              <div class="input-box">
+                <input type="text" required>
+                <label for="">Email</label>
+              </div>
+              
+              <div class="input-box">
+                <input type="password" required>
+                <label for="">Password</label>
+              </div>
+              
+              <div class="input-box">
+                <input type="password" required>
+                <label for="">Retype Password</label>
+              </div>
+              
+              <div class="input-box">
+                <input type="tel" required>
+                <label for="">Phone Number</label>
+              </div>
+              <label class="fileLabel" for="photo">Upload Personal Photo:</label>
+              <input type="file" id="photo" name="photo" accept="image/*" required>
+        
+              <button type="submit">Register</button>
+              <p class="fileLabel">Already have an account?<span class="loginicon">Login</span></p>
+            </form>
+          </div>
+    </div>
+</body>
+</html>
