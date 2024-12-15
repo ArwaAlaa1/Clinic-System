@@ -7,7 +7,7 @@ var clinicList = document.getElementById('clinicsList')
 
 var spansCity = document.getElementsByTagName('span')
 
-var doctors = document.getElementById('doctors')
+var doctors = document.getElementById('doctors-list')
 var clinicSelected;
 var citySelected;
 
@@ -39,7 +39,9 @@ xhr.addEventListener('readystatechange', function () {
                    for (var doctor of element.doctors) {
                      //! Get Doctors on Specific Clinic
                   if ( doctor.specialized==clinicSelected) {
-                    doctors.innerHTML += ` <div class="divHover"
+                    doctors.innerHTML += 
+                    `
+                     <div class="divHover" 
                     style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
                     <img src=${doctor.imageUrl}
                         style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
@@ -65,7 +67,8 @@ xhr.addEventListener('readystatechange', function () {
         {
             for (const element of response["medicalSpecializations"]) {
                         for (var doctor of element.doctors) {
-                        doctors.innerHTML += ` <div class="divHover"
+                        doctors.innerHTML += 
+                        ` <div class="divHover"
                         style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
                         <img src=${doctor.imageUrl}
                             style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
@@ -84,8 +87,12 @@ xhr.addEventListener('readystatechange', function () {
                         }
                        }
                     }   
+
+
+      
     
-    }
+   
+                }
   
 
 })

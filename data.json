@@ -143,6 +143,103 @@
 			"description": "Focuses on cosmetic dermatology and skin health."
 		  }
 		]
-	  }]
+	  },
+	  {
+		"imageUrl": "images/imagesclinics/psychology.webp",
+		"name": "Dermatology",
+		"description": "Dermatology addresses issues related to the skin, hair, and nails.",
+		"solutions": [
+		  "Topical treatments for acne and eczema",
+		  "Laser therapy for skin rejuvenation",
+		  "Biopsy for suspicious skin growths",
+		  "Allergy testing and treatments"
+		],
+		"doctors": [
+		  {
+			"name": "Dr. Salma Adel",
+			"imageUrl": "https://example.com/doctor11.jpg",
+			"location": "Cairo",
+			"specialized": "Dermatology",
+			"description": "Skincare specialist focusing on acne treatments."
+		  },
+		  {
+			"name": "Dr. Wael Mansour",
+			"imageUrl": "https://example.com/doctor12.jpg",
+			"location": "Sheikh Zayed",
+			"specialized": "Dermatology",
+			"description": "Expert in laser therapy for skin conditions."
+		  },
+		  {
+			"name": "Dr. Rania Helmy",
+			"imageUrl": "https://example.com/doctor13.jpg",
+			"location": "North Coast",
+			"specialized": "Dermatology",
+			"description": "Specializes in hair loss and scalp issues."
+		  },
+		  {
+			"name": "Dr. Adel Ibrahim",
+			"imageUrl": "https://example.com/doctor14.jpg",
+			"location": "Cairo",
+			"specialized": "Dermatology",
+			"description": "Known for effective eczema management."
+		  },
+		  {
+			"name": "Dr. Farah Magdy",
+			"imageUrl": "https://example.com/doctor15.jpg",
+			"location": "Sheikh Zayed",
+			"specialized": "Dermatology",
+			"description": "Focuses on cosmetic dermatology and skin health."
+		  }
+		]
+	  },
+	  {
+		"imageUrl": "images/imagesclinics/psychology.webp",
+		"name": "Dermatology",
+		"description": "Dermatology addresses issues related to the skin, hair, and nails.",
+		"solutions": [
+		  "Topical treatments for acne and eczema",
+		  "Laser therapy for skin rejuvenation",
+		  "Biopsy for suspicious skin growths",
+		  "Allergy testing and treatments"
+		],
+		"doctors": [
+		  {
+			"name": "Dr. Salma Adel",
+			"imageUrl": "https://example.com/doctor11.jpg",
+			"location": "Cairo",
+			"specialized": "Dermatology",
+			"description": "Skincare specialist focusing on acne treatments."
+		  },
+		  {
+			"name": "Dr. Wael Mansour",
+			"imageUrl": "https://example.com/doctor12.jpg",
+			"location": "Sheikh Zayed",
+			"specialized": "Dermatology",
+			"description": "Expert in laser therapy for skin conditions."
+		  },
+		  {
+			"name": "Dr. Rania Helmy",
+			"imageUrl": "https://example.com/doctor13.jpg",
+			"location": "North Coast",
+			"specialized": "Dermatology",
+			"description": "Specializes in hair loss and scalp issues."
+		  },
+		  {
+			"name": "Dr. Adel Ibrahim",
+			"imageUrl": "https://example.com/doctor14.jpg",
+			"location": "Cairo",
+			"specialized": "Dermatology",
+			"description": "Known for effective eczema management."
+		  },
+		  {
+			"name": "Dr. Farah Magdy",
+			"imageUrl": "https://example.com/doctor15.jpg",
+			"location": "Sheikh Zayed",
+			"specialized": "Dermatology",
+			"description": "Focuses on cosmetic dermatology and skin health."
+		  }
+		]
+	  }
+	]
   }
   
