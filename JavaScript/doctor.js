@@ -44,8 +44,7 @@ xhr.addEventListener('readystatechange', function () {
                   if ( doctor.specialized==clinicSelected) {
                     doctors.innerHTML += 
                     `
-                     <div class="divHover" doctor="${doctor.name}" 
-                    style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
+                     <div class="divHover" doctor="${doctor.name}" >
                     <img src=${doctor.imageUrl}
                         style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
                     <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
@@ -67,6 +66,9 @@ xhr.addEventListener('readystatechange', function () {
               
                   
                     }
+                    GetDoctorProfile()
+                    Book()
+           
                 }}
         }
         else  //! get all doctors
@@ -75,8 +77,7 @@ xhr.addEventListener('readystatechange', function () {
                         for (var doctor of element.doctors) {
                         doctors.innerHTML += 
                         `
-                     <div class="divHover" doctor="${doctor.name}" 
-                    style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
+                     <div class="divHover" doctor="${doctor.name}" >
                     <img src=${doctor.imageUrl}
                         style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
                     <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
@@ -98,6 +99,7 @@ xhr.addEventListener('readystatechange', function () {
             }   
                     
             GetDoctorProfile()
+            Book()
    
                 }
   
@@ -142,7 +144,7 @@ xhrDoc.addEventListener('readystatechange', function () {
                             doctors.innerHTML += 
                             `
                             <div class="divHover" doctor="${doctor.name}" 
-                           style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
+                          >
                            <img src=${doctor.imageUrl}
                                style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
                            <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
@@ -159,7 +161,28 @@ xhrDoc.addEventListener('readystatechange', function () {
                               </button>
                           </form>
                        </div>`
-                        } 
+                        } else{
+                            doctors.innerHTML += 
+                            `
+                            <div class="divHover" doctor="${doctor.name}" 
+                          >
+                           <img src=${doctor.imageUrl}
+                               style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
+                           <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
+                           
+                           <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
+                           
+                          <form method="get" action="Booking.html"> 
+                          <input  value=${doctor.specialized} name="specilized" hidden></input>
+                            
+                          <input  value=${doctor.name} name="doctor" hidden></input>
+                            
+                             <button type="submit" class="buttonHoverBase">
+                             Book Appointment
+                              </button>
+                          </form>
+                       </div>`
+                        }
         
                     }
 
@@ -167,6 +190,7 @@ xhrDoc.addEventListener('readystatechange', function () {
                 }
 
                 GetDoctorProfile()
+                Book()
 
             })
         }
@@ -184,7 +208,7 @@ xhrDoc.addEventListener('readystatechange', function () {
                         doctors.innerHTML += 
                         `
                         <div class="divHover" doctor="${doctor.name}" 
-                       style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
+                       >
                        <img src=${doctor.imageUrl}
                            style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
                        <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
@@ -208,6 +232,7 @@ xhrDoc.addEventListener('readystatechange', function () {
             }
 
             GetDoctorProfile()
+            Book()
         }
         )
 
@@ -230,3 +255,25 @@ function GetDoctorProfile(){
         })
     }
 }
+
+
+function Book(){
+    divHovers=document.querySelectorAll(".divHover");
+buttonHovers=document.querySelectorAll(".buttonHoverBase");
+
+
+for (let i = 0; i < divHovers.length; i++) {
+  divHovers[i].addEventListener('mouseover',function(){
+   
+  buttonHovers[i].style.display="inline-block"
+  })
+}
+for (let i = 0; i < divHovers.length; i++) {
+  divHovers[i].addEventListener('mouseout',function(){
+   
+  buttonHovers[i].style.display="none"
+  })
+}
+}
+
+

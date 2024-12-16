@@ -12,35 +12,35 @@
 		],
 		"doctors": [
 		  {
-			"name": "Dr. Ahmed Hossam",
+			"name": "Dr.Ahmed Hossam",
 			"imageUrl": "https://example.com/doctor1.jpg",
 			"location": "Cairo",
 			"specialized": "Cardiology",
 			"description": "Expert in treating cardiovascular diseases with over 15 years of experience."
 		  },
 		  {
-			"name": "Dr. Mona Khaled",
+			"name": "Dr.Mona Khaled",
 			"imageUrl": "https://example.com/doctor2.jpg",
 			"location": "Sheikh Zayed",
 			"specialized": "Cardiology",
 			"description": "Specializes in heart failure and interventional cardiology."
 		  },
 		  {
-			"name": "Dr. Samir El-Din",
+			"name": "Dr.Samir El-Din",
 			"imageUrl": "https://example.com/doctor3.jpg",
 			"location": "North Coast",
 			"specialized": "Cardiology",
 			"description": "Focuses on preventive cardiology and hypertension management."
 		  },
 		  {
-			"name": "Dr. Heba Ali",
+			"name": "Dr.Heba Ali",
 			"imageUrl": "https://example.com/doctor4.jpg",
 			"location": "Cairo",
 			"specialized": "Cardiology",
 			"description": "Renowned for minimally invasive cardiac procedures."
 		  },
 		  {
-			"name": "Dr. Omar Hassan",
+			"name": "Dr.Omar Hassan",
 			"imageUrl": "https://example.com/doctor5.jpg",
 			"location": "Sheikh Zayed",
 			"specialized": "Cardiology",
@@ -60,35 +60,35 @@
 		],
 		"doctors": [
 		  {
-			"name": "Dr. Rana Youssef",
+			"name": "Dr.Rana Youssef",
 			"imageUrl": "https://example.com/doctor6.jpg",
 			"location": "Cairo",
 			"specialized": "Neurology",
 			"description": "Expert in managing migraines and multiple sclerosis."
 		  },
 		  {
-			"name": "Dr. Karim Fathy",
+			"name": "Dr.Karim Fathy",
 			"imageUrl": "https://example.com/doctor7.jpg",
 			"location": "Sheikh Zayed",
 			"specialized": "Neurology",
 			"description": "Specialist in epilepsy and movement disorders."
 		  },
 		  {
-			"name": "Dr. Layla Saad",
+			"name": "Dr.Layla Saad",
 			"imageUrl": "https://example.com/doctor8.jpg",
 			"location": "North Coast",
 			"specialized": "Neurology",
 			"description": "Experienced in neurodegenerative diseases."
 		  },
 		  {
-			"name": "Dr. Hisham Tarek",
+			"name": "Dr.Hisham Tarek",
 			"imageUrl": "https://example.com/doctor9.jpg",
 			"location": "Cairo",
 			"specialized": "Neurology",
 			"description": "Focuses on stroke recovery and rehabilitation."
 		  },
 		  {
-			"name": "Dr. Amira Nabil",
+			"name": "Dr.Amira Nabil",
 			"imageUrl": "https://example.com/doctor10.jpg",
 			"location": "Sheikh Zayed",
 			"specialized": "Neurology",
@@ -108,35 +108,35 @@
 		],
 		"doctors": [
 		  {
-			"name": "Dr. Salma Adel",
+			"name": "Dr.Salma Adel",
 			"imageUrl": "https://example.com/doctor11.jpg",
 			"location": "Cairo",
 			"specialized": "Dermatology",
 			"description": "Skincare specialist focusing on acne treatments."
 		  },
 		  {
-			"name": "Dr. Wael Mansour",
+			"name": "Dr.Wael Mansour",
 			"imageUrl": "https://example.com/doctor12.jpg",
 			"location": "Sheikh Zayed",
 			"specialized": "Dermatology",
 			"description": "Expert in laser therapy for skin conditions."
 		  },
 		  {
-			"name": "Dr. Rania Helmy",
+			"name": "Dr.Rania Helmy",
 			"imageUrl": "https://example.com/doctor13.jpg",
 			"location": "North Coast",
 			"specialized": "Dermatology",
 			"description": "Specializes in hair loss and scalp issues."
 		  },
 		  {
-			"name": "Dr. Adel Ibrahim",
+			"name": "Dr.Adel Ibrahim",
 			"imageUrl": "https://example.com/doctor14.jpg",
 			"location": "Cairo",
 			"specialized": "Dermatology",
 			"description": "Known for effective eczema management."
 		  },
 		  {
-			"name": "Dr. Farah Magdy",
+			"name": "Dr.Farah Magdy",
 			"imageUrl": "https://example.com/doctor15.jpg",
 			"location": "Sheikh Zayed",
 			"specialized": "Dermatology",
@@ -156,35 +156,35 @@
 		],
 		"doctors": [
 		  {
-			"name": "Dr. Salma Adel",
+			"name": "Dr.Salma Adel",
 			"imageUrl": "https://example.com/doctor11.jpg",
 			"location": "Cairo",
 			"specialized": "Dermatology",
 			"description": "Skincare specialist focusing on acne treatments."
 		  },
 		  {
-			"name": "Dr. Wael Mansour",
+			"name": "Dr.Wael Mansour",
 			"imageUrl": "https://example.com/doctor12.jpg",
 			"location": "Sheikh Zayed",
 			"specialized": "Dermatology",
 			"description": "Expert in laser therapy for skin conditions."
 		  },
 		  {
-			"name": "Dr. Rania Helmy",
+			"name": "Dr.Rania Helmy",
 			"imageUrl": "https://example.com/doctor13.jpg",
 			"location": "North Coast",
 			"specialized": "Dermatology",
 			"description": "Specializes in hair loss and scalp issues."
 		  },
 		  {
-			"name": "Dr. Adel Ibrahim",
+			"name": "Dr.Adel Ibrahim",
 			"imageUrl": "https://example.com/doctor14.jpg",
 			"location": "Cairo",
 			"specialized": "Dermatology",
 			"description": "Known for effective eczema management."
 		  },
 		  {
-			"name": "Dr. Farah Magdy",
+			"name": "Dr.Farah Magdy",
 			"imageUrl": "https://example.com/doctor15.jpg",
 			"location": "Sheikh Zayed",
 			"specialized": "Dermatology",
@@ -204,36 +204,36 @@
 		],
 		"doctors": [
 		  {
-			"name": "Dr. Salma Adel",
+			"name": "Dr.Salma Adel",
 			"imageUrl": "https://example.com/doctor11.jpg",
 			"location": "Cairo",
 			"specialized": "Dermatology",
 			"description": "Skincare specialist focusing on acne treatments."
 		  },
 		  {
-			"name": "Dr. Wael Mansour",
+			"name": "Dr.Wael Mansour",
 			"imageUrl": "https://example.com/doctor12.jpg",
 			"location": "Sheikh Zayed",
 			"specialized": "Dermatology",
 			"description": "Expert in laser therapy for skin conditions."
 		  },
 		  {
-			"name": "Dr. Rania Helmy",
-			"imageUrl": "https://example.com/doctor13.jpg",
+			"name": "Dr.Rania Helmy",
+			"imageUrl": "images/imagesclinics/psychology.webp",
 			"location": "North Coast",
 			"specialized": "Dermatology",
 			"description": "Specializes in hair loss and scalp issues."
 		  },
 		  {
-			"name": "Dr. Adel Ibrahim",
-			"imageUrl": "https://example.com/doctor14.jpg",
+			"name": "Dr.Adel Ibrahim",
+			"imageUrl": "images/imagesclinics/neurology.webp",
 			"location": "Cairo",
 			"specialized": "Dermatology",
 			"description": "Known for effective eczema management."
 		  },
 		  {
-			"name": "Dr. Farah Magdy",
-			"imageUrl": "https://example.com/doctor15.jpg",
+			"name": "Dr.Farah Magdy",
+			"imageUrl": "images/imagesclinics/neurology.webp",
 			"location": "Sheikh Zayed",
 			"specialized": "Dermatology",
 			"description": "Focuses on cosmetic dermatology and skin health."
@@ -241,5 +241,4 @@
 		]
 	  }
 	]
-  }
-  
+}
