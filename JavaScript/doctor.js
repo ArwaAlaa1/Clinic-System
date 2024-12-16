@@ -13,6 +13,9 @@ var citySelected;
 
 var doctorLink=document.getElementById("doctorlink")
 
+
+
+
 var xhr = new XMLHttpRequest()
 xhr.open('get', "data.json")
 xhr.send()
@@ -41,7 +44,7 @@ xhr.addEventListener('readystatechange', function () {
                   if ( doctor.specialized==clinicSelected) {
                     doctors.innerHTML += 
                     `
-                     <div class="divHover" 
+                     <div class="divHover" doctor="${doctor.name}" 
                     style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
                     <img src=${doctor.imageUrl}
                         style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
@@ -49,12 +52,15 @@ xhr.addEventListener('readystatechange', function () {
                     
                     <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
                     
-                   <form method="get" action="Doctors.html"> 
+                   <form method="get" action="Booking.html"> 
                    <input  value=${doctor.specialized} name="specilized" hidden></input>
+                     
+                   <input  value=${doctor.name} name="doctor" hidden></input>
                      
                       <button type="submit" class="buttonHoverBase">
                       Book Appointment
                        </button>
+                   </form>
                    </form>
                 </div>`
                    }
@@ -68,29 +74,30 @@ xhr.addEventListener('readystatechange', function () {
             for (const element of response["medicalSpecializations"]) {
                         for (var doctor of element.doctors) {
                         doctors.innerHTML += 
-                        ` <div class="divHover"
-                        style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
-                        <img src=${doctor.imageUrl}
-                            style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
-                        <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
-                        
-                        <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
-                        
-                       <form method="get" action="Doctors.html"> 
-                       <input  value=${doctor.specialized} name="specilized" hidden></input>
-                         
-                          <button type="submit" class="buttonHoverBase">
-                          Book Appointment
-                           </button>
-                       </form>
-                    </div>`
+                        `
+                     <div class="divHover" doctor="${doctor.name}" 
+                    style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
+                    <img src=${doctor.imageUrl}
+                        style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
+                    <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
+                    
+                    <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
+                    
+                   <form method="get" action="Booking.html"> 
+                   <input  value=${doctor.specialized} name="specilized" hidden></input>
+                     
+                   <input  value=${doctor.name} name="doctor" hidden></input>
+                     
+                      <button type="submit" class="buttonHoverBase">
+                      Book Appointment
+                       </button>
+                   </form>
+                </div>`
                         }
-                       }
-                    }   
-
-
-      
-    
+         }
+            }   
+                    
+            GetDoctorProfile()
    
                 }
   
@@ -132,29 +139,34 @@ xhrDoc.addEventListener('readystatechange', function () {
                             //  console.log("hello");
 
 
-                            doctors.innerHTML += ` <div class="divHover"
-                  style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
-                  <img src=${doctor.imageUrl}
-                      style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
-                  <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
-                  
-                  <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
-                  <p style="margin-top: 12px;margin-bottom:7px;">${doctor.location}</p>
-                  
-                 <form method="get" action="Doctors.html"> 
-                 <input  value=${doctor.specialized} name="specilized" hidden></input>
-                   
-                    <button type="submit" class="buttonHoverBase">
-                    Book Appointment
-                     </button>
-                 </form>
-              </div>`
+                            doctors.innerHTML += 
+                            `
+                            <div class="divHover" doctor="${doctor.name}" 
+                           style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
+                           <img src=${doctor.imageUrl}
+                               style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
+                           <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
+                           
+                           <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
+                           
+                          <form method="get" action="Booking.html"> 
+                          <input  value=${doctor.specialized} name="specilized" hidden></input>
+                            
+                          <input  value=${doctor.name} name="doctor" hidden></input>
+                            
+                             <button type="submit" class="buttonHoverBase">
+                             Book Appointment
+                              </button>
+                          </form>
+                       </div>`
                         } 
         
                     }
 
 
                 }
+
+                GetDoctorProfile()
 
             })
         }
@@ -169,37 +181,52 @@ xhrDoc.addEventListener('readystatechange', function () {
             for (const element of response["medicalSpecializations"]) {
                 if (element.name == clinicSelected) {
                     for (const doctor of element.doctors) {
-                        doctors.innerHTML += ` <div class="divHover"
-                  style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
-                  <img src=${doctor.imageUrl}
-                      style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
-                  <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
-                  
-                  <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
-                  <p style="margin-top: 12px;margin-bottom:7px;">${doctor.location}</p>
-                  
-                 <form method="get" action="Doctors.html"> 
-                 <input  value=${doctor.specialized} name="specilized" hidden></input>
-                   
-                    <button type="submit" class="buttonHoverBase">
-                    Book Appointment
-                     </button>
-                 </form>
-              </div>`
+                        doctors.innerHTML += 
+                        `
+                        <div class="divHover" doctor="${doctor.name}" 
+                       style="position:absulote;margin-bottom:35px;margin-right:25px;float: left;width: 21%;padding: 20px 5px;box-shadow: 0px 0px 5px rgb(228, 225, 225);text-align: center;padding-bottom: 40px;">
+                       <img src=${doctor.imageUrl}
+                           style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
+                       <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
+                       
+                       <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
+                       
+                      <form method="get" action="Booking.html"> 
+                      <input  value=${doctor.specialized} name="specilized" hidden></input>
+                        
+                      <input  value=${doctor.name} name="doctor" hidden></input>
+                        
+                         <button type="submit" class="buttonHoverBase">
+                         Book Appointment
+                          </button>
+                      </form>
+                   </div>`
                     }
                 } 
                
 
             }
+
+            GetDoctorProfile()
         }
         )
+
+      
     }
 
 })
 
 
 
-
-
-
-
+function GetDoctorProfile(){
+    var cards=document.querySelectorAll(".divHover");
+    for(var i =0; i<cards.length; i++)
+    {
+        let card= cards[i]
+        card.addEventListener('click',function(){
+            var docName=card.getAttribute('doctor');
+            window.location.href = `profile.html?doctor=${docName}`;
+    
+        })
+    }
+}
