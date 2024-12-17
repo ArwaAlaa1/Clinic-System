@@ -14,7 +14,7 @@
   .container {
     display: flex;
     max-width: 500px;
-    background-color:  rgb(1, 134, 115);
+    background-color:  #0e683e;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(61, 60, 60, 0.914);
     width: 50%;
@@ -66,7 +66,7 @@
   }
   
   .input-box input:focus {
-    border-color:  rgb(1, 134, 115);
+    border-color:  #0e683e;
     box-shadow: 0 0 5px rgba(58, 123, 213, 0.3);
   }
   
@@ -91,7 +91,7 @@
   button[type="submit"] {
     width: 80%;
     padding: 15px;
-    background-color: rgb(1, 134, 115);
+    background-color: #0e683e;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -102,7 +102,7 @@
   }
   
   button[type="submit"]:hover {
-    background-color: rgb(1, 134, 115);
+    background-color: #0e683e;
   }
   
   .fileLabel {
@@ -112,14 +112,14 @@
   }
   
   .fileLabel a {
-    color:  rgb(1, 134, 115);
+    color:  #0e683e;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
   }
   
   .fileLabel a:hover {
-    color:  rgb(1, 134, 115);
+    color:  #0e683e;
   }
   
   .input-box {
@@ -140,7 +140,7 @@
   }
   
   .input-box textarea:focus {
-    border-color:  rgb(1, 134, 115);
+    border-color:  #0e683e;
     box-shadow: 0 0 5px rgba(58, 123, 213, 0.3);
   }
   
@@ -159,7 +159,7 @@
   .input-box textarea:not(:placeholder-shown) + label {
     top: -10px;
     font-size: 12px;
-    color:  rgb(1, 134, 115);
+    color:  #0e683e;
   }
   
 
