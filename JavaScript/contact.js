@@ -21,7 +21,8 @@ function sendcontactinfo() {
              {
             console.log(JSON.parse(xhr.responseText));
           
-                window.location.reload();
+                window.location.href = 'index.html';
+                alert('Thank you for contacting us!');
          
     }
 })
