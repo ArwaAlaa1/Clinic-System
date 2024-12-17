@@ -132,14 +132,11 @@ xhrDoc.addEventListener('readystatechange', function () {
                 currentSpan.style.borderBottom = "2px solid #0c6e45";
                 currentSpan.style.color = "#0c6e45";
                 doctors.innerHTML=""
-               
-                //! filter with city selected 
+               if(citySelected=='All'){
                 for (const element of response["medicalSpecializations"]) {
 
                     for (const doctor of element.doctors) {
-                        if (doctor.location == citySelected) {
-                            //  console.log("hello");
-
+                        
 
                             doctors.innerHTML += 
                             `
@@ -151,26 +148,7 @@ xhrDoc.addEventListener('readystatechange', function () {
                            
                            <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
                            
-                          <form method="get" action="Booking.html"> 
-                          <input  value=${doctor.specialized} name="specilized" hidden></input>
-                            
-                          <input  value=${doctor.name} name="doctor" hidden></input>
-                            
-                             <button type="submit" class="buttonHoverBase">
-                             Book Appointment
-                              </button>
-                          </form>
-                       </div>`
-                        } else{
-                            doctors.innerHTML += 
-                            `
-                            <div class="divHover" doctor="${doctor.name}" 
-                          >
-                           <img src=${doctor.imageUrl}
-                               style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
-                           <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
-                           
-                           <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
+                           <p style="margin-top: 12px;margin-bottom:7px;">${doctor.location}</p>
                            
                           <form method="get" action="Booking.html"> 
                           <input  value=${doctor.specialized} name="specilized" hidden></input>
@@ -182,12 +160,54 @@ xhrDoc.addEventListener('readystatechange', function () {
                               </button>
                           </form>
                        </div>`
-                        }
+                        
+                    
         
                     }
 
 
                 }
+
+               }else{
+  //! filter with city selected 
+  for (const element of response["medicalSpecializations"]) {
+
+    for (const doctor of element.doctors) {
+        if (doctor.location == citySelected) {
+            //  console.log("hello");
+
+
+            doctors.innerHTML += 
+            `
+            <div class="divHover" doctor="${doctor.name}" 
+          >
+           <img src=${doctor.imageUrl}
+               style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
+           <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
+           
+           <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
+           
+           <p style="margin-top: 12px;margin-bottom:7px;">${doctor.location}</p>
+           
+          <form method="get" action="Booking.html"> 
+          <input  value=${doctor.specialized} name="specilized" hidden></input>
+            
+          <input  value=${doctor.name} name="doctor" hidden></input>
+            
+             <button type="submit" class="buttonHoverBase">
+             Book Appointment
+              </button>
+          </form>
+       </div>`
+        }
+   
+
+    }
+
+
+}
+               }
+              
 
                 GetDoctorProfile()
                 Book()
@@ -214,7 +234,7 @@ xhrDoc.addEventListener('readystatechange', function () {
                        <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
                        
                        <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
-                       
+                        <p style="margin-top: 12px;margin-bottom:7px;">${doctor.location}</p>
                       <form method="get" action="Booking.html"> 
                       <input  value=${doctor.specialized} name="specilized" hidden></input>
                         
