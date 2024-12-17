@@ -4,26 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Confirmation Page</title>
-  <link rel="stylesheet" href="style.css">
- 
+  <link rel="stylesheet" href="css/booking.css"> 
 </head>
 <body>
   <h1>Booking Details</h1>
   <div class="appointment-details" id="appointmentDetails">
   </div>
+
   <div class="actions">
     <button onclick="goBack()">close</button>
-    <!-- <button onclick="clearBooking()">Clear Booking</button> -->
   </div>
  
   <script>
-    // استرجاع بيانات الموعد من localStorage
+    //    retrave data from localStorage
     const appointments = JSON.parse(localStorage.getItem('appointments')) || [];
  
     if (appointments.length > 0) {
-      const lastAppointment = appointments[appointments.length - 1];  
+      var lastAppointment = appointments[appointments.length - 1];  
  
-      const detailsHTML = `
+      var detailsHTML = `
         <p>Type of Visit: <span>${lastAppointment.visitType || "N/A"}</span></p>
         <p>Specialization: <span>${lastAppointment.specialty || "N/A"}</span></p>
         <p>The Doctor: <span>${lastAppointment.doctor || "N/A"}</span></p>
@@ -39,7 +38,7 @@
  
    
     function goBack() {
-      window.location.href = 'clinic.html';
+      window.location.href = 'index.html';
     }
  
     // function clearBooking() {
