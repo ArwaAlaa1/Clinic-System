@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color:  rgb(1, 134, 115);
+    background-color:  #0e683e;
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-weight:200;
@@ -47,7 +47,7 @@ body {
   .loginicon{
     margin: 5px;
     font-weight: 800;
-    color: rgb(1, 134, 115);
+    color: #0e683e;
     cursor: pointer;
     transition: 0.3s ease;
     text-decoration: none;
@@ -57,7 +57,7 @@ body {
   }
 .signup-title {
   font-size: 3em; 
-  color: rgb(3, 107, 91);
+  color: #0e683e;
   text-align: center;  
   margin-bottom: 20px;  
   letter-spacing: 1px;  
@@ -90,7 +90,7 @@ body {
   }
   form button {
     padding: 10px;
-    background-color: rgb(1, 134, 115);
+    background-color: #0e683e;
     color: white;
     border: none;
     border-radius: 5px;
@@ -101,7 +101,7 @@ body {
   }
   
   form button:hover {
-    background-color: rgb(2, 92, 78);
+    background-color: #0e683e;
   }
   
 .input-box{
