@@ -15,7 +15,7 @@ function fillSpecialties(data) {
    //const specialties = Object.keys(data["medicalSpecializations"]);
 
   var dataS = data["medicalSpecializations"];
-  console.log(dataS)
+  // console.log(dataS)
   dataS.forEach(specialty => {
     var option = document.createElement('option');
     option.value = specialty.name;  
