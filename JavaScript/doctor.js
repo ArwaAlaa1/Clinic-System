@@ -46,7 +46,7 @@ xhr.addEventListener('readystatechange', function () {
                     `
                      <div class="divHover" doctor="${doctor.name}" >
                     <img src=${doctor.imageUrl}
-                        style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
+                        style="border: 3px solid white;width: 90%;height:200px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
                     <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
                     
                     <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
@@ -79,7 +79,7 @@ xhr.addEventListener('readystatechange', function () {
                         `
                      <div class="divHover" doctor="${doctor.name}" >
                     <img src=${doctor.imageUrl}
-                        style="border: 3px solid white;width: 90%;height:130px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
+                        style="border: 3px solid white;width: 90%;height:200px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
                     <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
                     
                     <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>

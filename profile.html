@@ -8,71 +8,115 @@
   <style>
     /* General body styling */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9; /* Light background color */
+      background-color: #e3f2fd; /* Light blue background */
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh; /* Full screen height */
+      min-height: 100vh;
     }
 
     /* Profile container styling */
     .profile-container {
-      max-width: 600px;
-      background: white; /* Card background */
-      border-radius: 12px; /* Rounded corners */
+      max-width: 700px;
+      background: #fff;
+      border-radius: 15px;
       padding: 30px;
       text-align: center;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Popup-like shadow */
-      border: 2px solid green; /* Border around the card */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease-in-out; /* Smooth fade-in effect */
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     /* Circular image styling */
     .profile-container img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%; /* Makes the image circular */
-      border: 4px solid green; /* Border around the image */
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid #4caf50; /* Green border */
+      object-fit: cover; /* Proper image crop */
       margin-bottom: 20px;
+      transition: transform 0.3s ease; /* Smooth hover */
+    }
+
+    .profile-container img:hover {
+      transform: scale(1.1); /* Image zoom on hover */
     }
 
     /* Title styling */
     h1 {
-      font-size: 24px;
-      color: green;
-      margin-bottom: 10px;
+      font-size: 28px;
+      color: #2e7d32; /* Dark green */
+      margin-bottom: 5px;
+      font-weight: 700;
     }
 
-    /* Paragraph styling */
+    /* Subtext styling */
     p {
       margin: 10px 0;
       font-size: 16px;
       color: #555;
-      line-height: 1.5;
+      line-height: 1.6;
+    }
+
+    p strong {
+      color: #2e7d32; /* Highlight text in green */
     }
 
     /* Button styling */
     button {
-      background-color: green;
+      background-color: #4caf50; /* Green button */
       color: white;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 25px;
       font-size: 16px;
-      border-radius: 5px;
+      font-weight: 600;
+      border-radius: 25px; /* Rounded button */
       cursor: pointer;
-      transition: background-color 0.3s;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     button:hover {
-      background-color: green;
+      background-color: #388e3c; /* Darker green */
+      transform: translateY(-3px); /* Lift effect */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      .profile-container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 14px;
+      }
+      button {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="profile-container"  id="profile">
-
+  <div class="profile-container" id="profile">
+    <!-- Doctor's information will be inserted here by JavaScript -->
   </div>
   <script src="JavaScript/profile.js"></script>
 </body>
