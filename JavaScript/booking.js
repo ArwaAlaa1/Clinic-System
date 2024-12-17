@@ -103,9 +103,10 @@ document.getElementById('search-button').addEventListener('click', function (eve
     document.getElementById('visitType').value = appointment.visitType;
     document.getElementById('specialty').value = appointment.specialty;
  
-   specialtySelect.dispatchEvent(new Event('change'));    
 
     const specialtySelect = document.getElementById('specialty');
+    specialtySelect.dispatchEvent(new Event('change'));    
+
     document.getElementById('doctor').value = appointment.doctor;
   } else {
     alert("No appointment found for this phone number.");
