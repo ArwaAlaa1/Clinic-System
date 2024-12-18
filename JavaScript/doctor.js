@@ -1,6 +1,6 @@
 var response;
 var divHovers = document.querySelectorAll(".divHover");
-var divHovers = ""
+
 var buttonHovers = document.querySelectorAll(".buttonHoverBase");
 
 var clinicList = document.getElementById('clinicsList')
@@ -11,7 +11,7 @@ var doctors = document.getElementById('doctors-list')
 var clinicSelected;
 var citySelected;
 
-var doctorLink=document.getElementById("doctorlink")
+var doctorLink = document.getElementById("doctorlink")
 
 
 
@@ -22,28 +22,28 @@ xhr.send()
 xhr.addEventListener('readystatechange', function () {
     if (xhr.status == 200 && xhr.readyState == 4) {
         var response = JSON.parse(xhr.response);
-     
-       //! fill up clinics  DropDown List 
+
+        //! fill up clinics  DropDown List 
         for (const element of response["medicalSpecializations"]) {
             clinicList.innerHTML += `<option value=${element.name}>${element.name}</option>`;
 
-        }  
-        
+        }
+
         //! get doctors depend on clinics selected 
         var prams = new URLSearchParams(window.location.search);
-
+       
         if (prams.size != 0) {
             clinicSelected = prams.get('specilized');
             clinicList.value = clinicSelected
             for (const element of response["medicalSpecializations"]) {
-                if (element.name == clinicSelected ) {
-                  
-                    
-                   for (var doctor of element.doctors) {
-                     //! Get Doctors on Specific Clinic
-                  if ( doctor.specialized==clinicSelected) {
-                    doctors.innerHTML += 
-                    `
+                if (element.name == clinicSelected) {
+
+
+                    for (var doctor of element.doctors) {
+                        //! Get Doctors on Specific Clinic
+                        if (doctor.specialized == clinicSelected) {
+                            doctors.innerHTML +=
+                                `
                      <div class="divHover" doctor="${doctor.name}" >
                     <img src=${doctor.imageUrl}
                         style="border: 3px solid white;width: 90%;height:200px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
@@ -63,20 +63,21 @@ xhr.addEventListener('readystatechange', function () {
                    </form>
                    </form>
                 </div>`
-                   }
-              
-                  
+                        }
+
+
                     }
                     GetDoctorProfile()
                     Book()
-           
-                }}
+
+                }
+            }
         }
         else  //! get all doctors
         {
             for (const element of response["medicalSpecializations"]) {
-                        for (var doctor of element.doctors) {
-                        doctors.innerHTML += 
+                for (var doctor of element.doctors) {
+                    doctors.innerHTML +=
                         `
                      <div class="divHover" doctor="${doctor.name}" >
                     <img src=${doctor.imageUrl}
@@ -95,15 +96,15 @@ xhr.addEventListener('readystatechange', function () {
                        </button>
                    </form>
                 </div>`
-                        }
-         }
-            }   
-                    
-            GetDoctorProfile()
-            Book()
-   
                 }
-  
+            }
+        }
+
+        GetDoctorProfile()
+        Book()
+
+    }
+
 
 })
 
@@ -132,15 +133,15 @@ xhrDoc.addEventListener('readystatechange', function () {
                 currentSpan = spansCity[index];
                 currentSpan.style.borderBottom = "2px solid #0c6e45";
                 currentSpan.style.color = "#0c6e45";
-                doctors.innerHTML=""
-               if(citySelected=='All'){
-                for (const element of response["medicalSpecializations"]) {
+                doctors.innerHTML = ""
+                if (citySelected == 'All') {
+                    for (const element of response["medicalSpecializations"]) {
 
-                    for (const doctor of element.doctors) {
-                        
+                        for (const doctor of element.doctors) {
 
-                            doctors.innerHTML += 
-                            `
+
+                            doctors.innerHTML +=
+                                `
                             <div class="divHover" doctor="${doctor.name}" 
                           >
                            <img src=${doctor.imageUrl}
@@ -161,25 +162,26 @@ xhrDoc.addEventListener('readystatechange', function () {
                               </button>
                           </form>
                        </div>`
-                        
-                    
-        
+
+
+
+                        }
+
+
                     }
 
+                } 
+                else {
+                    //! filter with city selected 
+                    for (const element of response["medicalSpecializations"]) {
 
-                }
-
-               }else{
-  //! filter with city selected 
-  for (const element of response["medicalSpecializations"]) {
-
-    for (const doctor of element.doctors) {
-        if (doctor.location == citySelected) {
-            //  console.log("hello");
+                        for (const doctor of element.doctors) {
+                            if (doctor.location == citySelected) {
+                                //  console.log("hello");
 
 
-            doctors.innerHTML += 
-            `
+                                doctors.innerHTML +=
+                                    `
             <div class="divHover" doctor="${doctor.name}" 
           >
            <img src=${doctor.imageUrl}
@@ -200,34 +202,34 @@ xhrDoc.addEventListener('readystatechange', function () {
               </button>
           </form>
        </div>`
-        }
-   
-
-    }
+                            }
 
 
-}
-               }
-              
+                        }
+
+
+                    }
+                }
+
 
                 GetDoctorProfile()
                 Book()
 
             })
         }
-      
+
 
 
         //! filter with Clinic drop down 
         clinicList.addEventListener('change', function (e) {
             clinicSelected = e.target.value;
 
-            doctors.innerHTML=""
+            doctors.innerHTML = ""
             for (const element of response["medicalSpecializations"]) {
                 if (element.name == clinicSelected) {
                     for (const doctor of element.doctors) {
-                        doctors.innerHTML += 
-                        `
+                        doctors.innerHTML +=
+                            `
                         <div class="divHover" doctor="${doctor.name}" 
                        >
                        <img src=${doctor.imageUrl}
@@ -247,8 +249,8 @@ xhrDoc.addEventListener('readystatechange', function () {
                       </form>
                    </div>`
                     }
-                } 
-               
+                }
+
 
             }
 
@@ -257,44 +259,43 @@ xhrDoc.addEventListener('readystatechange', function () {
         }
         )
 
-      
+
     }
 
 })
 
 
 
-function GetDoctorProfile(){
-    var cards=document.querySelectorAll(".divHover");
-    for(var i =0; i<cards.length; i++)
-    {
-        let card= cards[i]
-        card.addEventListener('click',function(){
-            var docName=card.getAttribute('doctor');
+function GetDoctorProfile() {
+    var cards = document.querySelectorAll(".divHover");
+    for (var i = 0; i < cards.length; i++) {
+        let card = cards[i]
+        card.addEventListener('click', function () {
+            var docName = card.getAttribute('doctor');
             window.location.href = `profile.html?doctor=${docName}`;
-    
+
         })
     }
 }
 
 
-function Book(){
-    divHovers=document.querySelectorAll(".divHover");
-buttonHovers=document.querySelectorAll(".buttonHoverBase");
+function Book() {
+    divHovers = document.querySelectorAll(".divHover");
+    buttonHovers = document.querySelectorAll(".buttonHoverBase");
 
 
-for (let i = 0; i < divHovers.length; i++) {
-  divHovers[i].addEventListener('mouseover',function(){
-   
-  buttonHovers[i].style.display="inline-block"
-  })
-}
-for (let i = 0; i < divHovers.length; i++) {
-  divHovers[i].addEventListener('mouseout',function(){
-   
-  buttonHovers[i].style.display="none"
-  })
-}
+    for (let i = 0; i < divHovers.length; i++) {
+        divHovers[i].addEventListener('mouseover', function () {
+
+            buttonHovers[i].style.display = "inline-block"
+        })
+    }
+    for (let i = 0; i < divHovers.length; i++) {
+        divHovers[i].addEventListener('mouseout', function () {
+
+            buttonHovers[i].style.display = "none"
+        })
+    }
 }
 
 
