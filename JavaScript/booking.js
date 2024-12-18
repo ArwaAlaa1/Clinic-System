@@ -106,6 +106,7 @@ document.getElementById('search-button').addEventListener('click', function (eve
     specialtySelect.dispatchEvent(new Event('change'));  //fire event change to forse browser select dotor based on speciality 
 
     document.getElementById('doctor').value = appointment.doctor;
+    
   } else {
     alert("No appointment found for this phone number.");
   }
