@@ -44,7 +44,7 @@ function fillSpecialties(data) {
  
 function fillDoctorOptions(doctors) {
   const doctorSelect = document.getElementById('doctor');
- 
+  doctorSelect.innerHTML = '';
  
    // fill doctor
   doctors.forEach(doctor => {
