@@ -49,14 +49,15 @@ xhr.addEventListener('readystatechange', function () {
                         style="border: 3px solid white;width: 90%;height:200px;box-shadow: 0px 0px 7px rgb(216, 213, 213);">
                     <p style="margin-top: 12px;margin-bottom:7px;">${doctor.name}</p>
                     
-                    <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
                     
+                    <p style="margin-top: 12px;margin-bottom:7px;">${doctor.specialized}</p>
+                    <p style="margin-top: 12px;margin-bottom:7px;">${doctor.location}</p>
                    <form method="get" action="Booking.html"> 
                    <input  value=${doctor.specialized} name="specilized" hidden></input>
                      
                    <input  value=${doctor.name} name="doctor" hidden></input>
                      
-                      <button type="submit" class="buttonHoverBase">
+                      <button type="submit" class="buttonHoverBase" style="margin-left:36px">
                       Book Appointment
                        </button>
                    </form>
@@ -89,7 +90,7 @@ xhr.addEventListener('readystatechange', function () {
                      
                    <input  value=${doctor.name} name="doctor" hidden></input>
                      
-                      <button type="submit" class="buttonHoverBase">
+                      <button type="submit" class="buttonHoverBase" style="margin-left:36px">
                       Book Appointment
                        </button>
                    </form>
@@ -155,7 +156,7 @@ xhrDoc.addEventListener('readystatechange', function () {
                             
                           <input  value=${doctor.name} name="doctor" hidden></input>
                             
-                             <button type="submit" class="buttonHoverBase">
+                             <button type="submit" class="buttonHoverBase" style="margin-left:36px">
                              Book Appointment
                               </button>
                           </form>
@@ -194,7 +195,7 @@ xhrDoc.addEventListener('readystatechange', function () {
             
           <input  value=${doctor.name} name="doctor" hidden></input>
             
-             <button type="submit" class="buttonHoverBase">
+             <button type="submit" class="buttonHoverBase" style="margin-left:36px">
              Book Appointment
               </button>
           </form>
@@ -240,7 +241,7 @@ xhrDoc.addEventListener('readystatechange', function () {
                         
                       <input  value=${doctor.name} name="doctor" hidden></input>
                         
-                         <button type="submit" class="buttonHoverBase">
+                         <button type="submit" class="buttonHoverBase" style="margin-left:36px">
                          Book Appointment
                           </button>
                       </form>

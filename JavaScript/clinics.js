@@ -23,7 +23,7 @@ xhr.addEventListener('readystatechange',function(){
                <form method="get" action="Doctors.html"> 
                <input  value=${element.name} name="specilized" hidden></input>
                  
-                  <button type="submit" class="buttonHoverBase" style=" position: absolute;">
+                  <button type="submit" class="buttonHoverBase" style=" position: absolute;left:65px">
                   Book Appointment
                    </button>
                </form>
