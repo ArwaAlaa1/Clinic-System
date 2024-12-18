@@ -2,12 +2,6 @@
 var paragraphs = document.querySelectorAll('.paragraph');
 var currentIndex = 0;
 
-
-// paragraphs[currentIndex].style.opacity = 1;
-var currenetPraghraph=paragraphs[currentIndex]
-
-
- currenetPraghraph.style.opacity ="1";
 setInterval(function () {
 
 
@@ -23,8 +17,9 @@ setInterval(function () {
 
 }, 3000);
 
+
 const slides = document.querySelectorAll(".slide");
-let currentInd = 0;
+var currentInd = 0;
 
 setInterval(function () {
 
