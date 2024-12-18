@@ -12,7 +12,6 @@ xhr.send();
 function fillSpecialties(data) {
   var specialtySelect = document.getElementById('specialty');
  
-   //const specialties = Object.keys(data["medicalSpecializations"]);
 
   var dataS = data["medicalSpecializations"];
   // console.log(dataS)
@@ -40,13 +39,12 @@ function fillSpecialties(data) {
   });
 
  
-   specialtySelect.dispatchEvent(new Event('change'));
+   specialtySelect.dispatchEvent(new Event('change'));  //fire event chane
 }
  
 function fillDoctorOptions(doctors) {
   const doctorSelect = document.getElementById('doctor');
  
-  doctorSelect.innerHTML = '';
  
    // fill doctor
   doctors.forEach(doctor => {
@@ -105,7 +103,7 @@ document.getElementById('search-button').addEventListener('click', function (eve
  
 
     const specialtySelect = document.getElementById('specialty');
-    specialtySelect.dispatchEvent(new Event('change'));    
+    specialtySelect.dispatchEvent(new Event('change'));  //fire event change to forse browser select dotor based on speciality 
 
     document.getElementById('doctor').value = appointment.doctor;
   } else {
